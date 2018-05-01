@@ -1,23 +1,53 @@
 body {
-	margin: 0;
-	padding: 0;
-	font-size: 18px;
-	line-height: 24px;
-	font-family: "Arial", sans-serif;
-	color: #404040;
-	background: #ffffff;
+    min-width: 1040px;
+    margin: 0;
+    padding: 0;
+    font-size: 18px;
+    line-height: 24px;
+    font-family: "Arial", sans-serif;
+    color: #404040;
+    background-color: white;
 }
+.container {
+	width: 1020px;
+	margin: 0 auto;
+}
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.page-header {
+	background: url(img/header-bg.jpg) no-repeat center;
+	-webkit-background-size: cover;
+	background-size: cover;
+	min-height: 490px;
+	padding-top: 35px;
+}
+
 .page-header,
 .page-footer {
-	padding: 10px;
 	background-color: #363636;
 	color: #c3c3c3;
 }
-.page-footer {
-	margin-right: 20px;
+
+
+.header-top {
+	margin-bottom: 125px;
 }
+.header-logo {
+	float: left;
+	width: 205px;
+	height: 55px;
+}
+
 .main-nav {
-	list-style-type: none;
+    float: left;
+    width: 520px;
+    margin: 0;
+    margin-left: 125px;
+    padding: 0;
+    list-style: none;
 }
 .main-nav li {
 	text-transform: uppercase;
@@ -31,6 +61,9 @@ body {
 }
 .main-nav a:active {
 	color: rgba(255, 255, 255, 0.3);
+}
+.btn-quick-order {
+	float: right;
 }
 .btn {
 	color: #a38b70;
@@ -60,6 +93,7 @@ body {
 .feature-item {
 	text-align: center;
 	border-left: 1px solid #d9d9d9;
+	padding-top: 90px;
 }
 .feature-item:first-child{
 	border: none;
@@ -73,6 +107,15 @@ body {
 	font-size: 30px;
 	font-weight: bold;
 	color: #a38b70;
+}
+.feature-choice {
+	background: url(img/feature-1.png) no-repeat top center;
+}
+.feature-quality {
+	background: url(img/feature-2.png) no-repeat top center;
+}
+.feature-safety {
+	background: url(img/feature-3.png) no-repeat top center;
 }
 .cat-reference {
 	background-color: #f2f2f2;	
@@ -187,12 +230,19 @@ body {
 .feedback-form textarea:focus {
 	border: 2px solid #8d745a;   
 }
+.feedback-form {
+	background:  url(img/write.jpg) 100% 40px no-repeat;
+	padding-right: 390px;
+}
 .checkbox-area {
 	border-bottom: 1px solid #d5d5d5;
 }
 .footer-middle,
 .footer-bottom {
 	border-top: 1px solid #5e5e5e;
+}
+.page-footer {
+	margin-right: 20px;
 }
 .page-footer h3 {
 	font-family: "Georgia", serif;
